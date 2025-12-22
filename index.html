@@ -8,15 +8,47 @@
     <style>
         body {
             font-family: 'Segoe UI', Arial, sans-serif;
-            text-align: center;
             margin: 0;
             padding: 0;
             background-color: #fffbeb;
             color: #333;
             line-height: 1.8;
         }
+        nav {
+            background: #8b6f47;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0;
+        }
+        nav ul li a {
+            display: block;
+            padding: 20px 30px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+            transition: background 0.3s ease;
+        }
+        nav ul li a:hover {
+            background: #a1855b;
+        }
+        main {
+            padding-top: 80px; /* Space for fixed nav */
+        }
         header {
-            padding: 60px 20px 40px;
+            padding: 100px 20px 60px;
             background: linear-gradient(to bottom, #fffbeb, #fffae6);
         }
         h1 {
@@ -41,7 +73,18 @@
             margin: 0 auto 50px;
             display: block;
         }
-        .about {
+        section {
+            max-width: 1200px;
+            margin: 80px auto;
+            padding: 0 20px;
+        }
+        section h3 {
+            font-size: 36px;
+            color: #8b6f47;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .about, .skills, .contact {
             max-width: 900px;
             margin: 0 auto 60px;
             padding: 40px;
@@ -52,17 +95,31 @@
             font-size: 18px;
             line-height: 1.9;
         }
-        .about h3 {
-            text-align: center;
-            font-size: 32px;
+        .about strong, .skills strong {
             color: #8b6f47;
-            margin-bottom: 30px;
         }
-        .about strong {
+        .skills ul {
+            columns: 2;
+            column-gap: 60px;
+            list-style: none;
+            padding: 0;
+        }
+        .skills li {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+        }
+        .skills li::before {
+            content: "\f058";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
             color: #8b6f47;
+            position: absolute;
+            left: 0;
         }
         .social-links {
             margin: 50px 0;
+            text-align: center;
         }
         .social-links a {
             font-size: 48px;
@@ -74,19 +131,18 @@
             transform: translateY(-8px);
             color: #b89a5d;
         }
-        .portfolio {
-            max-width: 1200px;
-            margin: 60px auto;
-            padding: 0 20px;
-        }
-        .portfolio h3 {
-            font-size: 32px;
+        .contact a {
             color: #8b6f47;
-            margin-bottom: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contact a:hover {
+            text-decoration: underline;
         }
         .portfolio p {
             font-size: 18px;
-            margin-bottom: 40px;
+            max-width: 900px;
+            margin: 0 auto 40px;
             color: #555;
         }
         .gallery {
@@ -105,10 +161,20 @@
         }
         footer {
             margin-top: 100px;
-            padding: 30px;
+            padding: 40px;
             background: #8b6f47;
             color: #fff;
             font-size: 18px;
+            text-align: center;
+        }
+        @media (max-width: 992px) {
+            nav ul {
+                flex-wrap: wrap;
+            }
+            nav ul li a {
+                padding: 15px 20px;
+                font-size: 16px;
+            }
         }
         @media (max-width: 768px) {
             .profile-image {
@@ -116,52 +182,108 @@
                 height: 300px;
             }
             h1 { font-size: 42px; }
+            .skills ul { columns: 1; }
             .gallery { grid-template-columns: 1fr; }
-            .social-links a { font-size: 40px; margin: 0 20px; }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Rojin Sapkota</h1>
-        <h2>Finance Data Analyst | Advanced Excel & VBA | Power Query & Power BI | Financial Modeling</h2>
-        <img src="https://raw.githubusercontent.com/Rojin-77/Rojin-Sapkota--Personal-Website/main/Spring_rojin.jpg" alt="Rojin Sapkota" class="profile-image">
-    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <section class="about">
-        <h3>About Me</h3>
-        <p>I'm Rojin Sapkota, a passionate Finance Data Analyst based in Nepal, specializing in financial planning, budgeting, forecasting, and variance analysis.</p>
-        <p>With expertise in <strong>Advanced Excel</strong> (including VBA macros, Power Query, and PivotTables), <strong>Power BI</strong> for interactive dashboards, and financial modeling, I transform complex data into actionable insights that drive informed business decisions.</p>
-        <p>Dedicated to delivering clear, data-driven solutions, I'm committed to excellence in financial analysis and continuously enhancing my skills to support strategic growth.</p>
-        <p>Feel free to explore my portfolio of dashboards and projects!</p>
-    </section>
+    <main>
+        <header id="home">
+            <h1>Rojin Sapkota</h1>
+            <h2>Finance Data Analyst | Advanced Excel & VBA | Power Query & Power BI | Financial Modeling</h2>
+            <img src="https://raw.githubusercontent.com/Rojin-77/Rojin-Sapkota--Personal-Website/main/Spring_rojin.jpg" alt="Rojin Sapkota" class="profile-image">
+        </header>
 
-    <div class="social-links">
-        <a href="https://www.instagram.com/rojin_cr7/" target="_blank" aria-label="Instagram">
-            <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/rojin-sapkota/" target="_blank" aria-label="LinkedIn">
-            <i class="fab fa-linkedin-in"></i>
-        </a>
-        <a href="https://github.com/Rojin-77" target="_blank" aria-label="GitHub">
-            <i class="fab fa-github"></i>
-        </a>
-    </div>
+        <section id="about" class="about">
+            <h3>About Me</h3>
+            <p>I'm Rojin Sapkota, a passionate Finance Data Analyst based in Nepal, specializing in financial planning, budgeting, forecasting, and variance analysis.</p>
+            <p>With expertise in <strong>Advanced Excel</strong> (including VBA macros, Power Query, and PivotTables), <strong>Power BI</strong> for interactive dashboards, and financial modeling, I transform complex data into actionable insights that drive informed business decisions.</p>
+            <p>Dedicated to delivering clear, data-driven solutions, I'm committed to excellence in financial analysis and continuously enhancing my skills to support strategic growth.</p>
+            <p>Feel free to explore my portfolio of dashboards and projects!</p>
+        </section>
 
-    <section class="portfolio">
-        <h3>My Portfolio</h3>
-        <p>Here are some examples of my work in Power BI dashboards, Excel financial models, and VBA automations. These showcase interactive reporting, data visualization, and automation techniques.</p>
-        <div class="gallery">
-            <img src="https://blog.coupler.io/wp-content/uploads/2023/11/4.-Power-BI-financial-dashboard-1024x587.png" alt="Power BI Financial Dashboard Example 1">
-            <img src="https://globaldata365.com/wp-content/uploads/2023/03/Front-Page-2.webp" alt="Power BI Finance Dashboard">
-            <img src="https://zoomchartswebstorage.blob.core.windows.net/template-gallery/20241218-142616-power-bi-financial-analysis-dashboard-example-zoomcharts.png" alt="Power BI Financial Analysis Dashboard">
-            <img src="https://mammoth.io/wp-content/uploads/2024/03/mammoth-blog-dashboard-finance-1024x607.jpg" alt="Power BI Dashboard Example">
-            <img src="https://exceldashboardschool.com/wp-content/uploads/2023/07/Excel-Financial-Dashboard-Template-1.png" alt="Advanced Excel Financial Dashboard">
-            <img src="https://www.geckoboard.com/uploads/Excel-dashboard-example-finance.png" alt="Excel Finance Dashboard Example">
-            <img src="https://baremetrics.com/hubfs/Imported_Blog_Media/SaaS-Financial-Model-Dashboard-1024x558.png" alt="SaaS Financial Model in Excel">
-            <img src="https://wallstreetmojocms.recurpro.in/uploads/VBA_Examples_d7389364b5.png" alt="Excel VBA Macro Examples">
+        <section id="skills" class="skills">
+            <h3>Skills</h3>
+            <ul>
+                <li>Advanced Excel (PivotTables, Charts, Formulas)</li>
+                <li>VBA Macros & Automation</li>
+                <li>Power Query (Data Transformation & ETL)</li>
+                <li>Power BI (DAX, Interactive Dashboards, Data Modeling)</li>
+                <li>Financial Modeling & Forecasting</li>
+                <li>Budgeting & Variance Analysis</li>
+                <li>SQL Basics (Queries for Data Extraction)</li>
+                <li>Data Visualization & Reporting</li>
+                <li>Microsoft Office Suite</li>
+                <li>Analytical Thinking & Problem Solving</li>
+                <li>Attention to Detail</li>
+                <li>Time Management & Project Delivery</li>
+            </ul>
+        </section>
+
+        <div class="social-links">
+            <a href="https://www.instagram.com/rojin_cr7/" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/rojin-sapkota/" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/Rojin-77" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://rojinsapkota.blogspot.com/" target="_blank" aria-label="Blog">
+                <i class="fab fa-blogger"></i>
+            </a>
         </div>
-    </section>
+
+        <section id="portfolio" class="portfolio">
+            <h3>My Portfolio</h3>
+            <p>Here are some examples of my work in Power BI dashboards, Excel financial models, and VBA automations. These showcase interactive reporting, data visualization, and automation techniques.</p>
+            <div class="gallery">
+                <img src="https://blog.coupler.io/wp-content/uploads/2023/11/4.-Power-BI-financial-dashboard-1024x587.png" alt="Power BI Financial Dashboard Example 1">
+                <img src="https://globaldata365.com/wp-content/uploads/2023/03/Front-Page-2.webp" alt="Power BI Finance Dashboard">
+                <img src="https://zoomchartswebstorage.blob.core.windows.net/template-gallery/20241218-142616-power-bi-financial-analysis-dashboard-example-zoomcharts.png" alt="Power BI Financial Analysis Dashboard">
+                <img src="https://mammoth.io/wp-content/uploads/2024/03/mammoth-blog-dashboard-finance-1024x607.jpg" alt="Power BI Dashboard Example">
+                <img src="https://exceldashboardschool.com/wp-content/uploads/2023/07/Excel-Financial-Dashboard-Template-1.png" alt="Advanced Excel Financial Dashboard">
+                <img src="https://www.geckoboard.com/uploads/Excel-dashboard-example-finance.png" alt="Excel Finance Dashboard Example">
+                <img src="https://baremetrics.com/hubfs/Imported_Blog_Media/SaaS-Financial-Model-Dashboard-1024x558.png" alt="SaaS Financial Model in Excel">
+                <img src="https://wallstreetmojocms.recurpro.in/uploads/VBA_Examples_d7389364b5.png" alt="Excel VBA Macro Examples">
+            </div>
+        </section>
+
+        <section id="resume" class="about">
+            <h3>Resume</h3>
+            <p>My detailed resume is available upon request. Please feel free to <a href="#contact">contact me</a> for a copy, or download it from my LinkedIn profile.</p>
+            <p><strong>Highlights:</strong></p>
+            <ul>
+                <li>Proven experience in financial data analysis and reporting</li>
+                <li>Developed automated Excel tools using VBA that reduced reporting time by over 60%</li>
+                <li>Created interactive Power BI dashboards for executive decision-making</li>
+                <li>Strong background in budgeting, forecasting, and variance analysis</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="contact">
+            <h3>Contact</h3>
+            <p>I'm always open to discussing new opportunities, collaborations, or just connecting!</p>
+            <p><strong>Email:</strong> <a href="mailto:rojinsapkota17@gmail.com">rojinsapkota17@gmail.com</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/rojin-sapkota/" target="_blank">linkedin.com/in/rojin-sapkota</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/Rojin-77" target="_blank">github.com/Rojin-77</a></p>
+            <p><strong>Instagram:</strong> <a href="https://www.instagram.com/rojin_cr7/" target="_blank">@rojin_cr7</a></p>
+            <p><strong>Blog:</strong> <a href="https://rojinsapkota.blogspot.com/" target="_blank">rojinsapkota.blogspot.com</a></p>
+        </section>
+    </main>
 
     <footer>
         Copyright © 2025 Rojin Sapkota
