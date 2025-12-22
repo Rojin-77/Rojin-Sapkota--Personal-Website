@@ -4,68 +4,165 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rojin Sapkota - Finance Data Analyst</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Segoe UI', Arial, sans-serif;
             text-align: center;
             margin: 0;
-            padding: 40px;
-            background-color: #fffbeb; /* Very light soft yellow */
+            padding: 0;
+            background-color: #fffbeb;
             color: #333;
             line-height: 1.8;
         }
+        header {
+            padding: 60px 20px 40px;
+            background: linear-gradient(to bottom, #fffbeb, #fffae6);
+        }
         h1 {
-            font-size: 50px;
-            color: #8b6f47; /* Warm golden yellow */
-            margin-bottom: 10px;
+            font-size: 52px;
+            color: #8b6f47;
+            margin: 0 0 10px;
+            font-weight: 700;
         }
         h2 {
             font-size: 28px;
             color: #555;
-            margin: 20px 0;
+            margin: 0 0 40px;
+            font-weight: 400;
         }
         .profile-image {
-            width: 500px; /* Much bigger profile photo */
+            width: 500px;
             height: 500px;
             border-radius: 50%;
             object-fit: cover;
-            border: 10px solid #fff;
-            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
-            margin: 40px auto;
+            border: 12px solid #fff;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            margin: 0 auto 50px;
             display: block;
         }
-        .skills {
-            font-size: 24px;
+        .about {
             max-width: 900px;
-            margin: 30px auto;
+            margin: 0 auto 60px;
+            padding: 40px;
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+            text-align: left;
+            font-size: 18px;
+            line-height: 1.9;
         }
-        .icons img {
-            width: 300px;
-            margin: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        .about h3 {
+            text-align: center;
+            font-size: 32px;
+            color: #8b6f47;
+            margin-bottom: 30px;
+        }
+        .about strong {
+            color: #8b6f47;
+        }
+        .social-links {
+            margin: 50px 0;
+        }
+        .social-links a {
+            font-size: 48px;
+            margin: 0 30px;
+            color: #8b6f47;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+        .social-links a:hover {
+            transform: translateY(-8px);
+            color: #b89a5d;
+        }
+        .portfolio {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+        .portfolio h3 {
+            font-size: 32px;
+            color: #8b6f47;
+            margin-bottom: 20px;
+        }
+        .portfolio p {
+            font-size: 18px;
+            margin-bottom: 40px;
+            color: #555;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
         }
         footer {
-            margin-top: 80px;
+            margin-top: 100px;
+            padding: 30px;
+            background: #8b6f47;
+            color: #fff;
             font-size: 18px;
-            color: #777;
+        }
+        @media (max-width: 768px) {
+            .profile-image {
+                width: 300px;
+                height: 300px;
+            }
+            h1 { font-size: 42px; }
+            .gallery { grid-template-columns: 1fr; }
+            .social-links a { font-size: 40px; margin: 0 20px; }
         }
     </style>
 </head>
 <body>
-    <h1>Rojin Sapkota</h1>
-    <h2>Finance Data Analyst | Advanced Excel & VBA | Power Query & Power BI | Financial Modeling</h2>
-    <!-- Updated with your new photo from GitHub repository -->
-    <img src="https://raw.githubusercontent.com/Rojin-77/Rojin-Sapkota--Personal-Website/main/Spring_rojin.jpg" alt="Rojin Sapkota" class="profile-image">
-    <div class="skills">
-        <p>Welcome to my professional portfolio!</p>
-        <p>I specialize in turning complex financial data into clear insights using advanced tools.</p>
+    <header>
+        <h1>Rojin Sapkota</h1>
+        <h2>Finance Data Analyst | Advanced Excel & VBA | Power Query & Power BI | Financial Modeling</h2>
+        <img src="https://raw.githubusercontent.com/Rojin-77/Rojin-Sapkota--Personal-Website/main/Spring_rojin.jpg" alt="Rojin Sapkota" class="profile-image">
+    </header>
+
+    <section class="about">
+        <h3>About Me</h3>
+        <p>I'm Rojin Sapkota, a passionate Finance Data Analyst based in Nepal, specializing in financial planning, budgeting, forecasting, and variance analysis.</p>
+        <p>With expertise in <strong>Advanced Excel</strong> (including VBA macros, Power Query, and PivotTables), <strong>Power BI</strong> for interactive dashboards, and financial modeling, I transform complex data into actionable insights that drive informed business decisions.</p>
+        <p>Dedicated to delivering clear, data-driven solutions, I'm committed to excellence in financial analysis and continuously enhancing my skills to support strategic growth.</p>
+        <p>Feel free to explore my portfolio of dashboards and projects!</p>
+    </section>
+
+    <div class="social-links">
+        <a href="https://www.instagram.com/rojin_cr7/" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/rojin-sapkota/" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/Rojin-77" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
     </div>
-    <div class="icons">
-        <img src="https://thumbs.dreamstime.com/b/power-bi-generates-insightful-reports-to-support-decision-making-construction-projects-power-bi-generating-insightful-reports-381509539.jpg" alt="Power BI Dashboard">
-        <img src="https://www.slideteam.net/media/catalog/product/cache/1280x720/q/u/quarterly_financial_performance_dashboard_by_power_bi_slide01.jpg" alt="Financial Dashboard">
-        <img src="https://zebrabi.com/wp-content/uploads/2021/01/slika.png" alt="Data Analysis Tools">
-    </div>
+
+    <section class="portfolio">
+        <h3>My Portfolio</h3>
+        <p>Here are some examples of my work in Power BI dashboards, Excel financial models, and VBA automations. These showcase interactive reporting, data visualization, and automation techniques.</p>
+        <div class="gallery">
+            <img src="https://blog.coupler.io/wp-content/uploads/2023/11/4.-Power-BI-financial-dashboard-1024x587.png" alt="Power BI Financial Dashboard Example 1">
+            <img src="https://globaldata365.com/wp-content/uploads/2023/03/Front-Page-2.webp" alt="Power BI Finance Dashboard">
+            <img src="https://zoomchartswebstorage.blob.core.windows.net/template-gallery/20241218-142616-power-bi-financial-analysis-dashboard-example-zoomcharts.png" alt="Power BI Financial Analysis Dashboard">
+            <img src="https://mammoth.io/wp-content/uploads/2024/03/mammoth-blog-dashboard-finance-1024x607.jpg" alt="Power BI Dashboard Example">
+            <img src="https://exceldashboardschool.com/wp-content/uploads/2023/07/Excel-Financial-Dashboard-Template-1.png" alt="Advanced Excel Financial Dashboard">
+            <img src="https://www.geckoboard.com/uploads/Excel-dashboard-example-finance.png" alt="Excel Finance Dashboard Example">
+            <img src="https://baremetrics.com/hubfs/Imported_Blog_Media/SaaS-Financial-Model-Dashboard-1024x558.png" alt="SaaS Financial Model in Excel">
+            <img src="https://wallstreetmojocms.recurpro.in/uploads/VBA_Examples_d7389364b5.png" alt="Excel VBA Macro Examples">
+        </div>
+    </section>
+
     <footer>
         Copyright © 2025 Rojin Sapkota
     </footer>
