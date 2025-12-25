@@ -1,1 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brokerage Firm Performance Dashboard - Rojin Sapkota</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; background-color: #fffbeb; color: #333; line-height: 1.8; }
+        header { padding: 60px 20px; background: linear-gradient(to bottom, #fffbeb, #fffae6); text-align: center; }
+        h1 { font-size: 42px; color: #8b6f47; margin: 0; }
+        .back-link { margin: 30px auto; }
+        .back-link a { padding: 12px 30px; background: #8b6f47; color: #fff; text-decoration: none; border-radius: 8px; font-weight: 500; }
+        .back-link a:hover { background: #a1855b; }
+        .container { max-width: 1200px; margin: 40px auto; padding: 40px; background: #fff; border-radius: 15px; box-shadow: 0 8px 30px rgba(0,0,0,0.1); }
+        h2 { font-size: 36px; color: #8b6f47; text-align: center; margin-bottom: 40px; }
+        p { font-size: 18px; margin-bottom: 25px; }
+        .note { font-style: italic; color: #666; background: #f9f9f9; padding: 20px; border-left: 4px solid #8b6f47; margin: 40px 0; font-size: 16px; }
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 40px; margin-top: 50px; }
+        .gallery img { width: 100%; border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.15); }
+        footer { padding: 40px; background: #8b6f47; color: #fff; text-align: center; font-size: 18px; }
+        @media (max-width: 768px) { .gallery { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Brokerage Firm Performance Dashboard</h1>
+        <div class="back-link">
+            <a href="../index.html">← Back to Main Portfolio</a>
+        </div>
+    </header>
 
+    <div class="container">
+        <h2>Project Overview</h2>
+        <p>This project features an interactive Power BI dashboard that analyzes the daily turnover and performance of brokerage firms in Nepal.</p>
+        <p><strong>Data Period:</strong> August 2024 – February 2025<br>
+           <strong>Source:</strong> Public data from <a href="https://www.sharesansar.com/top-brokers" target="_blank">sharesansar.com/top-brokers</a><br>
+           <strong>Dataset:</strong> Daily turnover records for 92 brokerage firms</p>
+
+        <p>Multiple CSV files were downloaded, consolidated, and cleaned in Excel using Power Query. Firms were categorized by licensing status ("newly licensed") and ownership type (Banking/Financial Institution-owned or individual-owned). Relationships were built in the data model for cross-category analysis.</p>
+
+        <p>The cleaned dataset was imported into Power BI, where custom DAX measures were created for calculations. The final dashboard includes:</p>
+        <ul>
+            <li>Overall performance overview</li>
+            <li>Sub-category comparisons</li>
+            <li>Rankings and positional changes over time</li>
+            <li>Directional trend indicators</li>
+        </ul>
+
+        <div class="note">
+            <strong>Important Note:</strong> For demonstration and practice purposes only, all brokerage firm names have been replaced with placeholders such as "XYZ". This project is a sample created solely to showcase skills in data extraction, transformation, modeling, and visualization. It has no affiliation with any actual brokerage firm.
+        </div>
+
+        <h2 style="margin-top:60px;">Project Screenshots</h2>
+        <div class="gallery">
+            <img src="https://raw.githubusercontent.com/Rojin-77/Rojin-Sapkota--Personal-Website/main/Web%20scrape%20code.png" alt="Data Extraction Code">
+            <img src="https://raw.githubusercontent.com/Rojin-77/Rojin-Sapkota--Personal-Website/main/Brokerage%20Turnover_Projects.png" alt="Dashboard Overview">
+            <img src="https://raw.githubusercontent.com/Rojin-77/Rojin-Sapkota--Personal-Website/main/Power%20Query%20daily%20data.png" alt="Power Query Transformation Example">
+            <img src="https://raw.githubusercontent.com/Rojin-77/Rojin-Sapkota--Personal-Website/main/XYZ.png" alt="Sample Dashboard View with Placeholder Names">
+        </div>
+    </div>
+
+    <footer>
+        Copyright © 2025 Rojin Sapkota
+    </footer>
+</body>
+</html>
