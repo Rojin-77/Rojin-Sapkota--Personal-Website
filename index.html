@@ -146,19 +146,51 @@
             margin: 0 auto 40px;
             color: #555;
         }
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 40px;
+        .project {
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+            padding: 40px;
+            margin-bottom: 60px;
+            text-align: left;
         }
-        .gallery img {
+        .project h4 {
+            font-size: 28px;
+            color: #8b6f47;
+            margin-bottom: 20px;
+        }
+        .project p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        .project .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .project .gallery img {
             width: 100%;
             border-radius: 15px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.12);
             transition: transform 0.3s ease;
         }
-        .gallery img:hover {
+        .project .gallery img:hover {
             transform: scale(1.05);
+        }
+        .project a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background: #8b6f47;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: background 0.3s ease;
+        }
+        .project a:hover {
+            background: #a1855b;
         }
         footer {
             margin-top: 100px;
@@ -184,7 +216,7 @@
             }
             h1 { font-size: 42px; }
             .skills ul { columns: 1; }
-            .gallery { grid-template-columns: 1fr; }
+            .project .gallery { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -209,7 +241,7 @@
 
         <section id="about" class="about">
             <h3>About Me</h3>
-            <p>I'm Rojin Sapkota, a passionate Finance Data Analyst from Nepal, specializing in financial planning, budgeting, forecasting, and variance analysis.</p>
+            <p>I'm Rojin Sapkota, a passionate Finance Data Analyst based in Nepal, specializing in financial planning, budgeting, forecasting, and variance analysis.</p>
             <p>With expertise in <strong>Advanced Excel</strong> (including VBA macros, Power Query, and PivotTables), <strong>Power BI</strong> for interactive dashboards, and financial modeling, I transform complex data into actionable insights that drive informed business decisions.</p>
             <p>Dedicated to delivering clear, data-driven solutions, I'm committed to excellence in financial analysis and continuously enhancing my skills to support strategic growth.</p>
             <p>Feel free to explore my portfolio of dashboards and projects!</p>
@@ -224,7 +256,6 @@
                 <li>Power BI (DAX, Interactive Dashboards, Data Modeling)</li>
                 <li>Financial Modeling & Forecasting</li>
                 <li>Budgeting & Variance Analysis</li>
-                <li>Canva (Presentation & Report Design)</li>
                 <li>Data Visualization & Reporting</li>
                 <li>Microsoft Office Suite</li>
                 <li>Analytical Thinking & Problem Solving</li>
@@ -250,17 +281,39 @@
 
         <section id="portfolio" class="portfolio">
             <h3>My Portfolio</h3>
-            <p>Here are some examples of my work in Power BI dashboards, Excel financial models, and VBA automations. These showcase interactive reporting, data visualization, and automation techniques.</p>
-            <div class="gallery">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                
+            <p>Explore my selected projects showcasing expertise in data analysis, visualization, and automation. Each project highlights key technical skills and real-world applications.</p>
+            
+            <div class="project">
+                <h4>Dashboard of Performance of Brokerage Firm</h4>
+                <p>Developed an interactive dashboard to analyze brokerage firm performance metrics. Data was web-scraped from <a href="https://www.sharesansar.com/top-brokers" target="_blank">sharesansar.com/top-brokers</a> over a specified time range using custom scripts. The datasets were merged and cleaned via Power Query in Excel, then imported into Power BI for advanced visualization. Key activities included creating DAX measures for calculations, implementing data modeling for relationships, performing ETL processes for transformation, and designing user-friendly interactive elements to deliver actionable insights on turnover, trends, and performance indicators.</p>
+                <div class="gallery">
+                    <img src="https://raw.githubusercontent.com/Rojin-77/Rojin-Sapkota--Personal-Website/main/Web%20scrape%20code.png" alt="Web Scraping Code">
+                    <img src="https://raw.githubusercontent.com/Rojin-77/Rojin-Sapkota--Personal-Website/main/Brokerage%20Turnover_Projects.png" alt="Brokerage Turnover Dashboard">
+                    <img src="https://raw.githubusercontent.com/Rojin-77/Rojin-Sapkota--Personal-Website/main/Power%20Query%20daily%20data.png" alt="Power Query Data Transformation">
+                </div>
+                <a href="portfolio/brokerage-dashboard.html" target="_blank">View Full Project Details</a>
             </div>
+
+            <!-- Placeholder for future projects -->
+            <div class="project">
+                <h4>Upcoming Project 1</h4>
+                <p>Description of your next project. Add details, skills highlighted, and outcomes.</p>
+                <div class="gallery">
+                    <!-- Add images here -->
+                </div>
+                <a href="portfolio/upcoming-project1.html" target="_blank">View Full Project Details</a>
+            </div>
+
+            <div class="project">
+                <h4>Upcoming Project 2</h4>
+                <p>Description of another future project.</p>
+                <div class="gallery">
+                    <!-- Add images here -->
+                </div>
+                <a href="portfolio/upcoming-project2.html" target="_blank">View Full Project Details</a>
+            </div>
+            
+            <!-- Add more project divs as needed -->
         </section>
 
         <section id="resume" class="about">
