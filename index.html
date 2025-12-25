@@ -164,6 +164,15 @@
             margin-bottom: 30px;
             color: #333;
         }
+        .project .note {
+            font-style: italic;
+            color: #666;
+            font-size: 16px;
+            margin: 20px 0;
+            padding: 15px;
+            background: #f9f9f9;
+            border-left: 4px solid #8b6f47;
+        }
         .project .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -284,36 +293,28 @@
             <p>Explore my selected projects showcasing expertise in data analysis, visualization, and automation. Each project highlights key technical skills and real-world applications.</p>
             
             <div class="project">
-                <h4>Dashboard of Performance of Brokerage Firm</h4>
-                <p>Developed an interactive dashboard to analyze brokerage firm performance metrics. Data was web-scraped from <a href="https://www.sharesansar.com/top-brokers" target="_blank">sharesansar.com/top-brokers</a> over a specified time range using custom scripts. The datasets were merged and cleaned via Power Query in Excel, then imported into Power BI for advanced visualization. Key activities included creating DAX measures for calculations, implementing data modeling for relationships, performing ETL processes for transformation, and designing user-friendly interactive elements to deliver actionable insights on turnover, trends, and performance indicators.</p>
-                <div class="gallery">
-                    <img src="https://raw.githubusercontent.com/Rojin-77/Rojin-Sapkota--Personal-Website/main/Web%20scrape%20code.png" alt="Web Scraping Code">
-                    <img src="https://raw.githubusercontent.com/Rojin-77/Rojin-Sapkota--Personal-Website/main/Brokerage%20Turnover_Projects.png" alt="Brokerage Turnover Dashboard">
-                    <img src="https://raw.githubusercontent.com/Rojin-77/Rojin-Sapkota--Personal-Website/main/Power%20Query%20daily%20data.png" alt="Power Query Data Transformation">
+                <h4>Brokerage Firm Performance Dashboard</h4>
+                <p>This project demonstrates an interactive Power BI dashboard designed to analyze daily turnover and performance metrics of brokerage firms in Nepal. Data was sourced from <a href="https://www.sharesansar.com/top-brokers" target="_blank">sharesansar.com/top-brokers</a> covering the period from August 2024 to February 2025. The dataset includes daily turnover records for 92 brokerage firms.</p>
+                
+                <p>Multiple CSV files were consolidated and transformed in Excel using Power Query for efficient data cleaning and preparation. Brokerage firms were categorized based on licensing status ("newly licensed") and ownership structure ("under the ownership of Banking and Financial Institutions" or "individual"). Relationships were established in the data model to enable accurate analysis across categories.</p>
+                
+                <p>The transformed data was then imported into Power BI, where custom DAX measures were developed for key calculations. The dashboard provides an overview of overall brokerage performance, along with dedicated comparative views for each subcategory. It includes rankings, positional changes over time, and directional indicators to highlight trends in firm performance.</p>
+                
+                <div class="note">
+                    <strong>Note:</strong> For demonstration purposes, brokerage firm names in the dashboard have been replaced with "XYZ" and similar placeholders. This is a sample project created for practice and skill development only. It has no affiliation with any real brokerage firm and is intended solely to showcase technical capabilities in data analysis and visualization.
                 </div>
+                
+                <div class="gallery">
+                    <img src="https://raw.githubusercontent.com/Rojin-77/Rojin-Sapkota--Personal-Website/main/Web%20scrape%20code.png" alt="Data Extraction Code">
+                    <img src="https://raw.githubusercontent.com/Rojin-77/Rojin-Sapkota--Personal-Website/main/Brokerage%20Turnover_Projects.png" alt="Brokerage Turnover Overview">
+                    <img src="https://raw.githubusercontent.com/Rojin-77/Rojin-Sapkota--Personal-Website/main/Power%20Query%20daily%20data.png" alt="Power Query Transformation">
+                    <img src="https://raw.githubusercontent.com/Rojin-77/Rojin-Sapkota--Personal-Website/main/XYZ.png" alt="Sample Dashboard View">
+                </div>
+                
                 <a href="portfolio/brokerage-dashboard.html" target="_blank">View Full Project Details</a>
             </div>
-
-            <!-- Placeholder for future projects -->
-            <div class="project">
-                <h4>Upcoming Project 1</h4>
-                <p>Description of your next project. Add details, skills highlighted, and outcomes.</p>
-                <div class="gallery">
-                    <!-- Add images here -->
-                </div>
-                <a href="portfolio/upcoming-project1.html" target="_blank">View Full Project Details</a>
-            </div>
-
-            <div class="project">
-                <h4>Upcoming Project 2</h4>
-                <p>Description of another future project.</p>
-                <div class="gallery">
-                    <!-- Add images here -->
-                </div>
-                <a href="portfolio/upcoming-project2.html" target="_blank">View Full Project Details</a>
-            </div>
             
-            <!-- Add more project divs as needed -->
+            <!-- Add more projects here in the future -->
         </section>
 
         <section id="resume" class="about">
