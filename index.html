@@ -26,7 +26,7 @@
         .social-links a { font-size: 48px; margin: 0 30px; color: #8b6f47; transition: transform 0.3s, color 0.3s; }
         .social-links a:hover { transform: translateY(-8px); color: #b89a5d; }
         .portfolio .intro { font-size: 18px; max-width: 900px; margin: 0 auto 50px; color: #555; text-align: center; }
-        .project { background: #fff; border-radius: 15px; box-shadow: 0 8px 30px rgba(0,0,0,0.1); padding: 40px; text-align: center; }
+        .project { background: #fff; border-radius: 15px; box-shadow: 0 8px 30px rgba(0,0,0,0.1); padding: 40px; text-align: center; margin-bottom: 60px; }
         .project h4 { font-size: 28px; color: #8b6f47; margin-bottom: 20px; }
         .project p { font-size: 18px; margin-bottom: 30px; }
         .project .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin: 40px 0; }
@@ -98,6 +98,7 @@
             <h3>My Portfolio</h3>
             <p class="intro">A selection of my work demonstrating data transformation, visualization, and analytical skills.</p>
 
+            <!-- Project 1: Brokerage Firm Performance Dashboard -->
             <div class="project">
                 <h4>Brokerage Firm Performance Dashboard</h4>
                 <p>An interactive Power BI dashboard analyzing daily turnover and performance trends of brokerage firms in Nepal (August 2024 – February 2025).</p>
@@ -107,6 +108,20 @@
                     <img src="https://raw.githubusercontent.com/Rojin-77/Rojin-Sapkota--Personal-Website/main/Power%20Query%20daily%20data.png" alt="Power Query Transformation">
                 </div>
                 <a href="portfolio/brokerage-dashboard.html" target="_blank">View Full Project Details →</a>
+            </div>
+
+            <!-- Project 2: Accumulation-Distribution Works using Floorsheet -->
+            <div class="project">
+                <h4>Accumulation-Distribution Works using Floorsheet</h4>
+                <p>Automated collection of large-scale floorsheet data (~90,000 rows per day) from merolagani.com using Python and Selenium. Multiple days of data were combined and processed to enable broker-level filtering.</p>
+                <p>The tool calculates total traded amounts, broker-specific volumes, and net buy/sell positions (accumulation vs distribution) for any stock symbol, providing valuable insights into institutional and individual trading behavior.</p>
+                <div class="gallery">
+                    <img src="https://raw.githubusercontent.com/Rojin-77/Rojin-Sapkota--Personal-Website/main/Accumulation-Distn/Selenium%20scrap.png" alt="Selenium Automation">
+                    <img src="https://raw.githubusercontent.com/Rojin-77/Rojin-Sapkota--Personal-Website/main/Accumulation-Distn/Save%20files.png" alt="Saving Scraped Data">
+                    <img src="https://raw.githubusercontent.com/Rojin-77/Rojin-Sapkota--Personal-Website/main/Accumulation-Distn/Scrapped%20Floor.png" alt="Sample Floorsheet Data">
+                    <img src="https://raw.githubusercontent.com/Rojin-77/Rojin-Sapkota--Personal-Website/main/Accumulation-Distn/Output%20File.png" alt="Final Accumulation-Distribution Results">
+                </div>
+                <a href="Accumulation-Distn/Accumulation.html" target="_blank">View Full Project Details →</a>
             </div>
 
             <!-- Add more projects here later -->
