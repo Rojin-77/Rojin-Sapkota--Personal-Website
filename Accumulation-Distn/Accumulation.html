@@ -1,1 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accumulation-Distribution Analysis - Rojin Sapkota</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fffbeb;
+            color: #333;
+            line-height: 1.8;
+        }
+        header {
+            padding: 60px 20px;
+            background: linear-gradient(to bottom, #fffbeb, #fffae6);
+            text-align: center;
+        }
+        h1 {
+            font-size: 42px;
+            color: #8b6f47;
+            margin: 0;
+        }
+        .back-link {
+            margin: 30px auto;
+        }
+        .back-link a {
+            padding: 12px 30px;
+            background: #8b6f47;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+        .back-link a:hover {
+            background: #a1855b;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 40px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+        }
+        h2 {
+            font-size: 36px;
+            color: #8b6f47;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+        ul {
+            font-size: 18px;
+            margin: 20px 0 30px 40px;
+        }
+        .tools {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+        .note {
+            font-style: italic;
+            color: #666;
+            background: #f9f9f9;
+            padding: 20px;
+            border-left: 4px solid #8b6f47;
+            margin: 40px 0;
+            font-size: 16px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.03);
+        }
+        footer {
+            padding: 40px;
+            background: #8b6f47;
+            color: #fff;
+            text-align: center;
+            font-size: 18px;
+        }
+        @media (max-width: 768px) {
+            .gallery { grid-template-columns: 1fr; }
+            h1 { font-size: 36px; }
+            h2 { font-size: 30px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Accumulation-Distribution Analysis Tool</h1>
+        <div class="back-link">
+            <a href="../index.html">← Back to Main Portfolio</a>
+        </div>
+    </header>
 
+    <div class="container">
+        <h2>Project Overview</h2>
+        <p>This project automates the collection and analysis of floorsheet data from the Nepalese stock market to track accumulation and distribution patterns for specific symbols through particular brokers.</p>
+
+        <p>A large dataset (~90,000 rows per day) containing stock symbol, quantity traded, rate, amount, buyer broker, and seller broker details was extracted from merolagani.com. Multiple days' floorsheet data were combined into a consolidated dataset.</p>
+
+        <p>The processed data enables flexible filtering by buyer and/or seller broker numbers, providing:</p>
+        <ul>
+            <li>Total traded amount for each stock symbol</li>
+            <li>Amount traded through the selected broker(s)</li>
+            <li>Net buy/sell position (accumulation or distribution) for each symbol via the filtered broker(s)</li>
+        </ul>
+
+        <div class="tools">
+            <p><strong>Tools & Technologies Used:</strong></p>
+            <ul>
+                <li>Python libraries: Selenium (for web automation), Pandas (for data processing), BeautifulSoup</li>
+                <li>ChromeDriver in headless mode for reliable scraping</li>
+                <li>Excel: FILTER, SUMIFS, and other formulas for final analysis and reporting</li>
+            </ul>
+        </div>
+
+        <div class="note">
+            <strong>Note:</strong> This is a personal practice project designed to demonstrate skills in web data extraction, automation, and financial data analysis. All data is publicly available and used solely for educational purposes.
+        </div>
+
+        <h2 style="margin-top:60px;">Project Screenshots</h2>
+        <div class="gallery">
+            <img src="https://raw.githubusercontent.com/Rojin-77/Rojin-Sapkota--Personal-Website/main/Accumulation-Distn/Selenium%20scrap.png" alt="Selenium Automation Script in Action">
+            <img src="https://raw.githubusercontent.com/Rojin-77/Rojin-Sapkota--Personal-Website/main/Accumulation-Distn/Save%20files.png" alt="Saving Scraped Data to Files">
+            <img src="https://raw.githubusercontent.com/Rojin-77/Rojin-Sapkota--Personal-Website/main/Accumulation-Distn/Scrapped%20Floor.png" alt="Sample Scraped Floorsheet Data">
+            <img src="https://raw.githubusercontent.com/Rojin-77/Rojin-Sapkota--Personal-Website/main/Accumulation-Distn/Output%20File.png" alt="Final Processed Output with Accumulation-Distribution Results">
+        </div>
+    </div>
+
+    <footer>
+        Copyright © 2025 Rojin Sapkota
+    </footer>
+</body>
+</html>
