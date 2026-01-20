@@ -2,148 +2,154 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Rojin Sapkota | Finance & Valuation Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rojin Sapkota - Finance Data Analyst</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <meta name="description" content="Chartered Accountancy and finance portfolio of Rojin Sapkota featuring valuation, financial modeling and analytics projects.">
+
     <style>
-        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; background-color: #fffbeb; color: #333; line-height: 1.8; }
-        nav { background: #8b6f47; position: fixed; top: 0; width: 100%; z-index: 1000; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-        nav ul { list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; }
-        nav ul li a { display: block; padding: 20px 30px; color: #fff; text-decoration: none; font-size: 18px; font-weight: 500; transition: background 0.3s; }
-        nav ul li a:hover { background: #a1855b; }
-        main { padding-top: 80px; }
-        header { padding: 100px 20px 60px; background: linear-gradient(to bottom, #fffbeb, #fffae6); text-align: center; }
-        h1 { font-size: 52px; color: #8b6f47; margin: 0 0 10px; font-weight: 700; }
-        h2 { font-size: 28px; color: #555; margin: 0 0 40px; }
-        .profile-image { width: 500px; height: 500px; border-radius: 50%; object-fit: cover; border: 12px solid #fff; box-shadow: 0 10px 40px rgba(0,0,0,0.2); margin: 0 auto 50px; display: block; }
-        section { max-width: 1200px; margin: 80px auto; padding: 0 20px; }
-        section h3 { font-size: 36px; color: #8b6f47; margin-bottom: 40px; text-align: center; }
-        .about, .skills, .contact { max-width: 900px; margin: 0 auto 60px; padding: 40px; background: #fff; border-radius: 15px; box-shadow: 0 8px 30px rgba(0,0,0,0.1); text-align: left; font-size: 18px; }
-        .skills ul { columns: 2; column-gap: 60px; list-style: none; padding: 0; }
-        .skills li { margin-bottom: 15px; padding-left: 30px; position: relative; }
-        .skills li::before { content: "\f058"; font-family: "Font Awesome 6 Free"; font-weight: 900; color: #8b6f47; position: absolute; left: 0; }
-        .social-links { margin: 50px 0; text-align: center; }
-        .social-links a { font-size: 48px; margin: 0 30px; color: #8b6f47; transition: transform 0.3s, color 0.3s; }
-        .social-links a:hover { transform: translateY(-8px); color: #b89a5d; }
-        .portfolio .intro { font-size: 18px; max-width: 900px; margin: 0 auto 50px; color: #555; text-align: center; }
-        .project { background: #fff; border-radius: 15px; box-shadow: 0 8px 30px rgba(0,0,0,0.1); padding: 40px; text-align: center; margin-bottom: 60px; }
-        .project h4 { font-size: 28px; color: #8b6f47; margin-bottom: 20px; }
-        .project p { font-size: 18px; margin-bottom: 30px; }
-        .project .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin: 40px 0; }
-        .project .gallery img { width: 100%; border-radius: 15px; box-shadow: 0 6px 20px rgba(0,0,0,0.12); transition: transform 0.3s; }
-        .project .gallery img:hover { transform: scale(1.05); }
-        .project a { display: inline-block; padding: 12px 30px; background: #8b6f47; color: #fff; text-decoration: none; border-radius: 8px; font-weight: 500; }
-        .project a:hover { background: #a1855b; }
-        footer { margin-top: 100px; padding: 40px; background: #8b6f47; color: #fff; text-align: center; font-size: 18px; }
-        @media (max-width: 768px) {
-            .profile-image { width: 300px; height: 300px; }
-            h1 { font-size: 42px; }
-            .skills ul { columns: 1; }
-            .project .gallery { grid-template-columns: 1fr; }
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f6f9;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #0a2540;
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        h2 {
+            color: #0a2540;
+            margin-bottom: 20px;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .project {
+            background: #ffffff;
+            padding: 22px;
+            border-radius: 6px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+        }
+
+        .project h4 {
+            margin-top: 0;
+            color: #0a2540;
+        }
+
+        .project p {
+            font-size: 15px;
+        }
+
+        .project a {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #0a2540;
+            font-weight: bold;
+        }
+
+        .project a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            font-size: 14px;
+            color: #666;
+            background: #ffffff;
+            margin-top: 40px;
         }
     </style>
 </head>
+
 <body>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
 
-    <main>
-        <header id="home">
-            <h1>Rojin Sapkota</h1>
-            <h2>Finance Data Analyst | Advanced Excel & VBA | Power Query & Power BI | Financial Modeling</h2>
-            <img src="https://raw.githubusercontent.com/Rojin-77/Rojin-Sapkota--Personal-Website/main/Spring_rojin.jpg" alt="Rojin Sapkota" class="profile-image">
-        </header>
+<header>
+    <h1>Rojin Sapkota</h1>
+    <p>Chartered Accountancy | Financial Modeling | Valuation</p>
+</header>
 
-        <section id="about" class="about">
-            <h3>About Me</h3>
-            <p>I'm Rojin Sapkota, a passionate Finance Data Analyst based in Nepal, specializing in financial planning, budgeting, forecasting, and variance analysis.</p>
-            <p>With expertise in <strong>Advanced Excel</strong> (including VBA macros, Power Query, and PivotTables), <strong>Power BI</strong> for interactive dashboards, and financial modeling, I transform complex data into actionable insights that drive informed business decisions.</p>
-            <p>Dedicated to delivering clear, data-driven solutions, I'm committed to excellence in financial analysis and continuously enhancing my skills to support strategic growth.</p>
-            <p>Feel free to explore my portfolio of dashboards and projects!</p>
-        </section>
+<!-- ================= PORTFOLIO SECTION ================= -->
+<section id="portfolio">
+    <h2>Portfolio</h2>
 
-        <section id="skills" class="skills">
-            <h3>Skills</h3>
-            <ul>
-                <li>Advanced Excel (PivotTables, Charts, Formulas)</li>
-                <li>VBA Macros & Automation</li>
-                <li>Power Query (Data Transformation & ETL)</li>
-                <li>Power BI (DAX, Interactive Dashboards, Data Modeling)</li>
-                <li>Financial Modeling & Forecasting</li>
-                <li>Budgeting & Variance Analysis</li>
-                <li>Data Visualization & Reporting</li>
-                <li>Microsoft Office Suite</li>
-                <li>Analytical Thinking & Problem Solving</li>
-                <li>Attention to Detail</li>
-                <li>Time Management & Project Delivery</li>
-            </ul>
-        </section>
+    <div class="portfolio-grid">
 
-        <div class="social-links">
-            <a href="https://www.instagram.com/rojin_cr7/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/rojin-sapkota/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://github.com/Rojin-77" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://rojinsapkota.blogspot.com/" target="_blank"><i class="fab fa-blogger"></i></a>
+        <!-- ================= EXISTING PROJECT 1 ================= -->
+        <div class="project">
+            <h4>Financial Dashboard Analysis</h4>
+            <p>
+                Interactive financial dashboard analyzing performance trends,
+                KPIs, and financial ratios for decision support.
+            </p>
+            <a href="#">View Project →</a>
         </div>
 
-        <section id="portfolio" class="portfolio">
-            <h3>My Portfolio</h3>
-            <p class="intro">A selection of my work demonstrating data transformation, visualization, and analytical skills.</p>
+        <!-- ================= EXISTING PROJECT 2 ================= -->
+        <div class="project">
+            <h4>Accumulation & Distribution Analysis</h4>
+            <p>
+                Market behavior analysis using volume-price trends to identify
+                institutional accumulation and distribution phases.
+            </p>
+            <a href="#">View Project →</a>
+        </div>
 
-            <!-- Project 1: Brokerage Firm Performance Dashboard -->
-            <div class="project">
-                <h4>Brokerage Firm Performance Dashboard</h4>
-                <p>An interactive Power BI dashboard analyzing daily turnover and performance trends of brokerage firms in Nepal (August 2024 – February 2025).</p>
-                <div class="gallery">
-                    <img src="https://raw.githubusercontent.com/Rojin-77/Rojin-Sapkota--Personal-Website/main/Web%20scrape%20code.png" alt="Data Extraction Code">
-                    <img src="https://raw.githubusercontent.com/Rojin-77/Rojin-Sapkota--Personal-Website/main/Brokerage%20Turnover_Projects.png" alt="Dashboard Overview">
-                    <img src="https://raw.githubusercontent.com/Rojin-77/Rojin-Sapkota--Personal-Website/main/Power%20Query%20daily%20data.png" alt="Power Query Transformation">
-                </div>
-                <a href="portfolio/brokerage-dashboard.html" target="_blank">View Full Project Details →</a>
-            </div>
+        <!-- ====================================================== -->
+        <!-- 🔽 ADDITIONAL EXISTING PROJECTS CAN GO HERE 🔽 -->
+        <!-- ====================================================== -->
 
-            <!-- Project 2: Accumulation-Distribution Works using Floorsheet -->
-            <div class="project">
-                <h4>Accumulation-Distribution Works using Floorsheet</h4>
-                <p>Automated collection of large-scale floorsheet data (~90,000 rows per day) from merolagani.com using Python and Selenium. Multiple days of data were combined and processed to enable broker-level filtering.</p>
-                <p>The tool calculates total traded amounts, broker-specific volumes, and net buy/sell positions (accumulation vs distribution) for any stock symbol, providing valuable insights into institutional and individual trading behavior.</p>
-                <div class="gallery">
-                    <img src="https://raw.githubusercontent.com/Rojin-77/Rojin-Sapkota--Personal-Website/main/Accumulation-Distn/Save%20files.png" alt="Saving Scraped Data">
-                    <img src="https://raw.githubusercontent.com/Rojin-77/Rojin-Sapkota--Personal-Website/main/Accumulation-Distn/Scrapped%20Floor.png" alt="Sample Floorsheet Data">
-                    <img src="https://raw.githubusercontent.com/Rojin-77/Rojin-Sapkota--Personal-Website/main/Accumulation-Distn/Output%20File.png" alt="Final Accumulation-Distribution Results">
-                </div>
-                <a href="Accumulation-Distn/Accumulation.html" target="_blank">View Full Project Details →</a>
-            </div>
 
-            <!-- Add more projects here later -->
-        </section>
+        <!-- ================= NEW PROJECT : SCB VALUATION ================= -->
+        <div class="project">
+            <h4>Valuation of Standard Chartered Bank Nepal</h4>
 
-        <section id="resume" class="about">
-            <h3>Resume</h3>
-            <p>My detailed resume is available upon request. Please <a href="#contact">contact me</a> or visit my LinkedIn profile.</p>
-        </section>
+            <p>
+                A comprehensive valuation of <strong>Standard Chartered Bank Nepal</strong>
+                using a <strong>top-down macroeconomic framework</strong>.
+                The model links GDP growth, private sector credit demand,
+                and NRB regulatory constraints to sustainable lending capacity.
+            </p>
 
-        <section id="contact" class="contact">
-            <h3>Contact</h3>
-            <p>I'm open to new opportunities and collaborations.</p>
-            <p><strong>Email:</strong> <a href="mailto:rojinsapkota17@gmail.com">rojinsapkota17@gmail.com</a></p>
-            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/rojin-sapkota/" target="_blank">linkedin.com/in/rojin-sapkota</a></p>
-            <p><strong>GitHub:</strong> <a href="https://github.com/Rojin-77" target="_blank">github.com/Rojin-77</a></p>
-            <p><strong>Instagram:</strong> <a href="https://www.instagram.com/rojin_cr7/" target="_blank">@rojin_cr7</a></p>
-            <p><strong>Blog:</strong> <a href="https://rojinsapkota.blogspot.com/" target="_blank">rojinsapkota.blogspot.com</a></p>
-        </section>
-    </main>
+            <p>
+                Regulatory factors such as capital adequacy, credit-to-deposit ratio,
+                liquidity coverage, and dividend constraints are explicitly modeled.
+            </p>
 
-    <footer>
-        Copyright © 2025 Rojin Sapkota
-    </footer>
+            <p>
+                <strong>Tools:</strong> Excel Financial Modeling, Scenario Analysis,
+                Banking Regulations
+            </p>
+
+            <a href="portfolio/scb-valuation/" target="_blank">
+                View Valuation Sheet →
+            </a>
+        </div>
+
+    </div>
+</section>
+<!-- ================= END PORTFOLIO SECTION ================= -->
+
+<footer>
+    © 2026 Rojin Sapkota | Finance & Valuation Portfolio
+</footer>
+
 </body>
 </html>
