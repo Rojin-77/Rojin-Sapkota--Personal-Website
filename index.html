@@ -1,301 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rojin Sapkota - Finance Data Analyst</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <style>
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fffbeb;
-            color: #333;
-            line-height: 1.8;
-        }
-        nav {
-            background: #8b6f47;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
-        nav ul li a {
-            display: block;
-            padding: 20px 30px;
-            color: #fff;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: 500;
-            transition: background 0.3s;
-        }
-        nav ul li a:hover {
-            background: #a1855b;
-        }
-        main {
-            padding-top: 80px;
-        }
-        header {
-            padding: 100px 20px 60px;
-            background: linear-gradient(to bottom, #fffbeb, #fffae6);
-            text-align: center;
-        }
-        h1 {
-            font-size: 52px;
-            color: #8b6f47;
-            margin: 0 0 10px;
-            font-weight: 700;
-        }
-        h2 {
-            font-size: 28px;
-            color: #555;
-            margin: 0 0 40px;
-        }
-        .profile-image {
-            width: 500px;
-            height: 500px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 12px solid #fff;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
-            margin: 0 auto 50px;
-            display: block;
-        }
-        section {
-            max-width: 1200px;
-            margin: 80px auto;
-            padding: 0 20px;
-        }
-        section h3 {
-            font-size: 36px;
-            color: #8b6f47;
-            margin-bottom: 40px;
-            text-align: center;
-        }
-        .about, .skills, .contact {
-            max-width: 900px;
-            margin: 0 auto 60px;
-            padding: 40px;
-            background: #fff;
-            border-radius: 15px;
-            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
-            text-align: left;
-            font-size: 18px;
-        }
-        .skills ul {
-            columns: 2;
-            column-gap: 60px;
-            list-style: none;
-            padding: 0;
-        }
-        .skills li {
-            margin-bottom: 15px;
-            padding-left: 30px;
-            position: relative;
-        }
-        .skills li::before {
-            content: "\f058";
-            font-family: "Font Awesome 6 Free";
-            font-weight: 900;
-            color: #8b6f47;
-            position: absolute;
-            left: 0;
-        }
-        .social-links {
-            margin: 50px 0;
-            text-align: center;
-        }
-        .social-links a {
-            font-size: 48px;
-            margin: 0 30px;
-            color: #8b6f47;
-            transition: transform 0.3s, color 0.3s;
-        }
-        .social-links a:hover {
-            transform: translateY(-8px);
-            color: #b89a5d;
-        }
-        .portfolio .intro {
-            font-size: 18px;
-            max-width: 900px;
-            margin: 0 auto 50px;
-            color: #555;
-            text-align: center;
-        }
-        .project {
-            background: #fff;
-            border-radius: 15px;
-            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
-            padding: 40px;
-            text-align: center;
-            margin-bottom: 70px;
-        }
-        .project h4 {
-            font-size: 28px;
-            color: #8b6f47;
-            margin-bottom: 20px;
-        }
-        .project p {
-            font-size: 18px;
-            margin-bottom: 25px;
-        }
-        .project .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin: 40px 0;
-        }
-        .project .gallery img {
-            width: 100%;
-            border-radius: 15px;
-            box-shadow: 0 6px 20px rgba(0,0,0,0.12);
-            transition: transform 0.3s;
-        }
-        .project .gallery img:hover {
-            transform: scale(1.05);
-        }
-        .project a {
-            display: inline-block;
-            padding: 12px 28px;
-            background: #8b6f47;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: 500;
-            margin: 10px 12px;
-            transition: background 0.3s;
-        }
-        .project a:hover {
-            background: #a1855b;
-        }
-        footer {
-            margin-top: 100px;
-            padding: 40px;
-            background: #8b6f47;
-            color: #fff;
-            text-align: center;
-            font-size: 18px;
-        }
-        @media (max-width: 768px) {
-            .profile-image { width: 300px; height: 300px; }
-            h1 { font-size: 42px; }
-            .skills ul { columns: 1; }
-            .project .gallery { grid-template-columns: 1fr; }
-            nav ul { flex-wrap: wrap; }
-            nav ul li a { padding: 16px 20px; font-size: 16px; }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rojin Sapkota - Finance Data Analyst</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fffbeb;
+      color: #333;
+      line-height: 1.8;
+    }
+    nav {
+      background: #8b6f47;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+    nav ul li a {
+      display: block;
+      padding: 20px 30px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 500;
+      transition: background 0.3s;
+    }
+    nav ul li a:hover {
+      background: #a1855b;
+    }
+    main {
+      padding-top: 80px;
+    }
+    header {
+      padding: 100px 20px 60px;
+      background: linear-gradient(to bottom, #fffbeb, #fffae6);
+      text-align: center;
+    }
+    h1 {
+      font-size: 52px;
+      color: #8b6f47;
+      margin: 0 0 10px;
+      font-weight: 700;
+    }
+    h2 {
+      font-size: 28px;
+      color: #555;
+      margin: 0 0 40px;
+    }
+    .profile-image {
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 12px solid #fff;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+      margin: 0 auto 50px;
+      display: block;
+    }
+    section {
+      max-width: 1200px;
+      margin: 80px auto;
+      padding: 0 20px;
+    }
+    section h3 {
+      font-size: 36px;
+      color: #8b6f47;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    .about, .skills, .contact {
+      max-width: 900px;
+      margin: 0 auto 60px;
+      padding: 40px;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+      text-align: left;
+      font-size: 18px;
+    }
+    .skills ul {
+      columns: 2;
+      column-gap: 60px;
+      list-style: none;
+      padding: 0;
+    }
+    .skills li {
+      margin-bottom: 15px;
+      padding-left: 30px;
+      position: relative;
+    }
+    .skills li::before {
+      content: "\f058";
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      color: #8b6f47;
+      position: absolute;
+      left: 0;
+    }
+    .social-links {
+      margin: 50px 0;
+      text-align: center;
+    }
+    .social-links a {
+      font-size: 48px;
+      margin: 0 30px;
+      color: #8b6f47;
+      transition: transform 0.3s, color 0.3s;
+    }
+    .social-links a:hover {
+      transform: translateY(-8px);
+      color: #b89a5d;
+    }
+    .portfolio .intro {
+      font-size: 18px;
+      max-width: 900px;
+      margin: 0 auto 50px;
+      color: #555;
+      text-align: center;
+    }
+    .project {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+      padding: 40px;
+      text-align: center;
+      margin-bottom: 70px;
+    }
+    .project h4 {
+      font-size: 28px;
+      color: #8b6f47;
+      margin-bottom: 20px;
+    }
+    .project p {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+    .project .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin: 40px 0;
+    }
+    .project .gallery img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+      transition: transform 0.3s;
+    }
+    .project .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .project a {
+      display: inline-block;
+      padding: 12px 28px;
+      background: #8b6f47;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 500;
+      margin: 10px 12px;
+      transition: background 0.3s;
+    }
+    .project a:hover {
+      background: #a1855b;
+    }
+    footer {
+      margin-top: 100px;
+      padding: 40px;
+      background: #8b6f47;
+      color: #fff;
+      text-align: center;
+      font-size: 18px;
+    }
+    @media (max-width: 768px) {
+      .profile-image { width: 300px; height: 300px; }
+      h1 { font-size: 42px; }
+      .skills ul { columns: 1; }
+      .project .gallery { grid-template-columns: 1fr; }
+      nav ul { flex-wrap: wrap; }
+      nav ul li a { padding: 16px 20px; font-size: 16px; }
+    }
+  </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <header id="home">
-            <h1>Rojin Sapkota</h1>
-            <h2>Finance Data Analyst | Advanced Excel & VBA | Power Query & Power BI | Financial Modeling</h2>
-            <img src="https://github.com/Rojin-77/Rojin-Sapkota--Personal-Website/blob/main/Profile%20Pics.jpeg" alt="Rojin Sapkota" class="profile-image">
-        </header>
-        <section id="about" class="about">
-            <h3>About Me</h3>
-            <p>I'm Rojin Sapkota, a passionate and dedicated Finance Data Analyst with deep expertise in financial planning, budgeting, forecasting, financial modeling, and variance analysis.</p>
-            <p>With expertise in <strong>Advanced Excel</strong> (including VBA macros, Power Query, and PivotTables), <strong>Power BI</strong> for interactive dashboards, and financial modeling, I transform complex data into actionable insights that drive informed business decisions.</p>
-            <p>Dedicated to delivering clear, data-driven solutions, I'm committed to excellence in financial analysis and continuously enhancing my skills to support strategic growth.</p>
-            <p>I love to work in the field of data and finance, aligning with Tech and Visualization  </p>
-            <p>Feel free to explore my portfolio of dashboards, automation tools, and valuation models!</p>
-        </section>
-        <section id="skills" class="skills">
-            <h3>Skills</h3>
-            <ul>
-                <li>Advanced Excel (Dynamic PivotTables, Scenario Modeling, Visualization, Excel Dashboard & Formulas)</li>
-                <li>VBA Macros & Automation</li>
-                <li>Power Query (Data Transformation & ETL)</li>
-                <li>Power BI (DAX, Interactive Dashboards, Data Modeling)</li>
-                <li>Financial Modeling & Forecasting</li>
-                <li>Budgeting & Variance Analysis</li>
-                <li>Equity Valuation</li>
-                <li>Data Visualization & Reporting</li>
-                <li>Microsoft Office Suite</li>
-                <li>Time Management & Project Delivery</li>
-            </ul>
-        </section>
-        <div class="social-links">
-            <a href="https://www.instagram.com/rojin_cr7/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/rojin-sapkota/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://github.com/Rojin-77" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://rojinsapkota.blogspot.com/" target="_blank"><i class="fab fa-blogger"></i></a>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <header id="home">
+      <h1>Rojin Sapkota</h1>
+      <h2>Finance Data Analyst | Advanced Excel & VBA | Power Query & Power BI | Financial Modeling</h2>
+      <img src="https://raw.githubusercontent.com/Rojin-77/Rojin-Sapkota--Personal-Website/main/Profile%20Pics.jpeg" alt="Rojin Sapkota" class="profile-image">
+    </header>
+
+    <section id="about" class="about">
+      <h3>About Me</h3>
+      <p>I'm Rojin Sapkota, a passionate and dedicated Finance Data Analyst with deep expertise in financial planning, budgeting, forecasting, financial modeling, and variance analysis.</p>
+      <p>With expertise in <strong>Advanced Excel</strong> (including VBA macros, Power Query, and PivotTables), <strong>Power BI</strong> for interactive dashboards, and financial modeling, I transform complex data into actionable insights that drive informed business decisions.</p>
+      <p>Dedicated to delivering clear, data-driven solutions, I'm committed to excellence in financial analysis and continuously enhancing my skills to support strategic growth.</p>
+      <p>I love to work in the field of data and finance, aligning with Tech and Visualization </p>
+      <p>Feel free to explore my portfolio of dashboards, automation tools, and valuation models!</p>
+    </section>
+
+    <section id="skills" class="skills">
+      <h3>Skills</h3>
+      <ul>
+        <li>Advanced Excel (Dynamic PivotTables, Scenario Modeling, Visualization, Excel Dashboard & Formulas)</li>
+        <li>VBA Macros & Automation</li>
+        <li>Power Query (Data Transformation & ETL)</li>
+        <li>Power BI (DAX, Interactive Dashboards, Data Modeling)</li>
+        <li>Financial Modeling & Forecasting</li>
+        <li>Budgeting & Variance Analysis</li>
+        <li>Equity Valuation</li>
+        <li>Data Visualization & Reporting</li>
+        <li>Microsoft Office Suite</li>
+        <li>Time Management & Project Delivery</li>
+      </ul>
+    </section>
+
+    <div class="social-links">
+      <a href="https://www.instagram.com/rojin_cr7/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/rojin-sapkota/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/Rojin-77" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://rojinsapkota.blogspot.com/" target="_blank"><i class="fab fa-blogger"></i></a>
+    </div>
+
+    <section id="portfolio" class="portfolio">
+      <h3>My Portfolio</h3>
+      <p class="intro">A section of my work demonstrating data scrapping & transformation, visualization, automation, and financial valuation skills in the context of Nepal's financial markets.</p>
+
+      <!-- Project 1: Brokerage Firm Performance Dashboard -->
+      <div class="project">
+        <h4>Brokerage Firm Performance Dashboard</h4>
+        <p>Interactive Power BI dashboard scrapping datewise daily turnover of brokers and performance trends of brokerage firms in Nepal.</p>
+        <div class="gallery">
+          <img src="https://raw.githubusercontent.com/Rojin-77/Rojin-Sapkota--Personal-Website/main/Web%20scrape%20code.png" alt="Data Extraction Code">
+          <img src="https://raw.githubusercontent.com/Rojin-77/Rojin-Sapkota--Personal-Website/main/Brokerage%20Turnover_Projects.png" alt="Dashboard Overview">
+          <img src="https://raw.githubusercontent.com/Rojin-77/Rojin-Sapkota--Personal-Website/main/Power%20Query%20daily%20data.png" alt="Power Query Transformation">
         </div>
-        <section id="portfolio" class="portfolio">
-            <h3>My Portfolio</h3>
-            <p class="intro">A section of my work demonstrating data scrapping & transformation, visualization, automation, and financial valuation skills in the context of Nepal's financial markets.</p>
-            <!-- Project 1: Brokerage Firm Performance Dashboard -->
-            <div class="project">
-                <h4>Brokerage Firm Performance Dashboard</h4>
-                <p>Interactive Power BI dashboard scrapping datewise daily turnover of brokers and performance trends of brokerage firms in Nepal.</p>
-                <div class="gallery">
-                    <img src="https://raw.githubusercontent.com/Rojin-77/Rojin-Sapkota--Personal-Website/main/Web%20scrape%20code.png" alt="Data Extraction Code">
-                    <img src="https://raw.githubusercontent.com/Rojin-77/Rojin-Sapkota--Personal-Website/main/Brokerage%20Turnover_Projects.png" alt="Dashboard Overview">
-                    <img src="https://raw.githubusercontent.com/Rojin-77/Rojin-Sapkota--Personal-Website/main/Power%20Query%20daily%20data.png" alt="Power Query Transformation">
-                </div>
-                <div>
-                    <a href="portfolio/brokerage-dashboard.html" target="_blank">View Full Project Details →</a>
-                    <a href="https://raw.githubusercontent.com/Rojin-77/Rojin-Sapkota--Personal-Website/main/portfolio/Firm%20Performance%20Report.pdf" target="_blank">Download Sample Brokerage Report (PDF) →</a>
-                </div>
-            </div>
-            <!-- Project 2: Accumulation-Distribution Analysis using Floorsheet Data -->
-            <div class="project">
-                <h4>Accumulation-Distribution Analysis using Floorsheet Data</h4>
-                <p>Automated daily floorsheet scraping (~90,000 rows) from merolagani.com using Python + Selenium, with multi-day aggregation and broker-level accumulation/distribution calculation for any stock.</p>
-                <div class="gallery">
-                    <img src="https://raw.githubusercontent.com/Rojin-77/Rojin-Sapkota--Personal-Website/main/Accumulation-Distn/Save%20files.png" alt="Saving Scraped Data">
-                    <img src="https://raw.githubusercontent.com/Rojin-77/Rojin-Sapkota--Personal-Website/main/Accumulation-Distn/Scrapped%20Floor.png" alt="Sample Floorsheet Data">
-                    <img src="https://raw.githubusercontent.com/Rojin-77/Rojin-Sapkota--Personal-Website/main/Accumulation-Distn/Output%20File.png" alt="Final Accumulation-Distribution Results">
-                </div>
-                <a href="Accumulation-Distn/Accumulation.html" target="_blank">View Full Project Details →</a>
-            </div>
-            <!-- Project 3: SCB Valuation -->
-            <div class="project">
-                <h4>Valuation of Standard Chartered Bank Nepal – Top-Down Approach</h4>
-                <p>Top-down valuation model for Standard Chartered Bank Nepal (SCB) with scenario analysis. Projects private sector lending growth aligned with Nepal's GDP forecasts and estimates SCB's market share. Incorporates NRB capital adequacy constraints, SCB's strong CAR & low NPL advantage, and conservative CD ratio due to high call deposit composition.</p>
-                <div class="gallery">
-                    <!-- You can add 1–3 screenshot images later if desired -->
-                </div>
-                <a href="scb-valuation/index.html" target="_blank">View Full Project Details →</a>
-                <a href="https://github.com/Rojin-77/Rojin-Sapkota--Personal-Website/raw/main/scb-valuation/SCB_Valuation.pdf" target="_blank">Download Valuation Report (PDF) →</a>
-            </div>
-        </section>
-        <section id="resume" class="about">
-            <h3>Resume</h3>
-            <p>My detailed resume is available upon request. Please <a href="#contact">contact me</a> or visit my LinkedIn profile for the latest version.</p>
-        </section>
-        <section id="contact" class="contact">
-            <h3>Contact</h3>
-            <p>I'm open to new opportunities, collaborations, and discussions on financial analysis or data projects.</p>
-            <p><strong>Email:</strong> <a href="mailto:rojinsapkota17@gmail.com">rojinsapkota17@gmail.com</a></p>
-            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/rojin-sapkota/" target="_blank">linkedin.com/in/rojin-sapkota</a></p>
-            <p><strong>GitHub:</strong> <a href="https://github.com/Rojin-77" target="_blank">github.com/Rojin-77</a></p>
-            <p><strong>Instagram:</strong> <a href="https://www.instagram.com/rojin_cr7/" target="_blank">@rojin_cr7</a></p>
-            <p><strong>Blog:</strong> <a href="https://rojinsapkota.blogspot.com/" target="_blank">rojinsapkota.blogspot.com</a></p>
-        </section>
-    </main>
-    <footer>
-        Copyright © 2026 Rojin Sapkota
-    </footer>
+        <div>
+          <a href="portfolio/brokerage-dashboard.html" target="_blank">View Full Project Details →</a>
+          <a href="https://raw.githubusercontent.com/Rojin-77/Rojin-Sapkota--Personal-Website/main/portfolio/Firm%20Performance%20Report.pdf" target="_blank">Download Sample Brokerage Report (PDF) →</a>
+        </div>
+      </div>
+
+      <!-- Project 2: Accumulation-Distribution Analysis using Floorsheet Data -->
+      <div class="project">
+        <h4>Accumulation-Distribution Analysis using Floorsheet Data</h4>
+        <p>Automated daily floorsheet scraping (~90,000 rows) from merolagani.com using Python + Selenium, with multi-day aggregation and broker-level accumulation/distribution calculation for any stock.</p>
+        <div class="gallery">
+          <img src="https://raw.githubusercontent.com/Rojin-77/Rojin-Sapkota--Personal-Website/main/Accumulation-Distn/Save%20files.png" alt="Saving Scraped Data">
+          <img src="https://raw.githubusercontent.com/Rojin-77/Rojin-Sapkota--Personal-Website/main/Accumulation-Distn/Scrapped%20Floor.png" alt="Sample Floorsheet Data">
+          <img src="https://raw.githubusercontent.com/Rojin-77/Rojin-Sapkota--Personal-Website/main/Accumulation-Distn/Output%20File.png" alt="Final Accumulation-Distribution Results">
+        </div>
+        <a href="Accumulation-Distn/Accumulation.html" target="_blank">View Full Project Details →</a>
+      </div>
+
+      <!-- Project 3: SCB Valuation -->
+      <div class="project">
+        <h4>Valuation of Standard Chartered Bank Nepal – Top-Down Approach</h4>
+        <p>Top-down valuation model for Standard Chartered Bank Nepal (SCB) with scenario analysis. Projects private sector lending growth aligned with Nepal's GDP forecasts and estimates SCB's market share. Incorporates NRB capital adequacy constraints, SCB's strong CAR & low NPL advantage, and conservative CD ratio due to high call deposit composition.</p>
+        <div class="gallery">
+          <!-- You can add 1–3 screenshot images later if desired -->
+        </div>
+        <a href="scb-valuation/index.html" target="_blank">View Full Project Details →</a>
+        <a href="https://github.com/Rojin-77/Rojin-Sapkota--Personal-Website/raw/main/scb-valuation/SCB_Valuation.pdf" target="_blank">Download Valuation Report (PDF) →</a>
+      </div>
+    </section>
+
+    <section id="resume" class="about">
+      <h3>Resume</h3>
+      <p>My detailed resume is available upon request. Please <a href="#contact">contact me</a> or visit my LinkedIn profile for the latest version.</p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h3>Contact</h3>
+      <p>I'm open to new opportunities, collaborations, and discussions on financial analysis or data projects.</p>
+      <p><strong>Email:</strong> <a href="mailto:rojinsapkota17@gmail.com">rojinsapkota17@gmail.com</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/rojin-sapkota/" target="_blank">linkedin.com/in/rojin-sapkota</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/Rojin-77" target="_blank">github.com/Rojin-77</a></p>
+      <p><strong>Instagram:</strong> <a href="https://www.instagram.com/rojin_cr7/" target="_blank">@rojin_cr7</a></p>
+      <p><strong>Blog:</strong> <a href="https://rojinsapkota.blogspot.com/" target="_blank">rojinsapkota.blogspot.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    Copyright © 2026 Rojin Sapkota
+  </footer>
 </body>
 </html>
